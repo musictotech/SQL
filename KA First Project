@@ -1,0 +1,11 @@
+CREATE TABLE forever_avocado_music (id INTEGER PRIMARY KEY, name TEXT, inventory INTEGER, price INTEGER, number_sold INTEGER);
+
+INSERT INTO forever_avocado_music VALUES (1, "trumpet", 10, 1200, 3);
+INSERT INTO forever_avocado_music VALUES (2, "flute", 7, 1000, 8);
+INSERT INTO forever_avocado_music VALUES (3, "saxophone", 3,1500, 2);
+INSERT INTO forever_avocado_music VALUES (4, "snare drum", 7, 800, 6);
+INSERT INTO forever_avocado_music VALUES (5, "trombone", 2, 1100, 13);
+
+SELECT * FROM forever_avocado_music ORDER BY price asc;
+
+SELECT SUM (number_sold) from forever_avocado_music
